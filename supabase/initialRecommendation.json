@@ -1,0 +1,133 @@
+{
+    "id": "chatcmpl-Bm2dHenDVkJFqTeIwnP6hf4hgwHIw",
+    "object": "chat.completion",
+    "created": 1750789563,
+    "model": "gpt-4o-2024-08-06",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "destination": "Maldives - Male",
+              "score": 95,
+              "check_in_date": "2023-11-15",
+              "check_out_date": "2023-11-19",
+              "departure_date": "2023-11-14",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Thailand - Phuket",
+              "score": 92,
+              "check_in_date": "2023-11-20",
+              "check_out_date": "2023-11-24",
+              "departure_date": "2023-11-19",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Bali - Ubud",
+              "score": 90,
+              "check_in_date": "2023-11-25",
+              "check_out_date": "2023-11-29",
+              "departure_date": "2023-11-24",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Sri Lanka - Colombo",
+              "score": 88,
+              "check_in_date": "2023-12-01",
+              "check_out_date": "2023-12-05",
+              "departure_date": "2023-11-30",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Singapore",
+              "score": 87,
+              "check_in_date": "2023-12-06",
+              "check_out_date": "2023-12-10",
+              "departure_date": "2023-12-05",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Dubai - UAE",
+              "score": 85,
+              "check_in_date": "2023-12-11",
+              "check_out_date": "2023-12-15",
+              "departure_date": "2023-12-10",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Malaysia - Kuala Lumpur",
+              "score": 83,
+              "check_in_date": "2023-12-16",
+              "check_out_date": "2023-12-20",
+              "departure_date": "2023-12-15",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Vietnam - Ho Chi Minh City",
+              "score": 82,
+              "check_in_date": "2023-12-21",
+              "check_out_date": "2023-12-25",
+              "departure_date": "2023-12-20",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Mauritius",
+              "score": 80,
+              "check_in_date": "2023-12-26",
+              "check_out_date": "2023-12-30",
+              "departure_date": "2023-12-25",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Fiji - Nadi",
+              "score": 78,
+              "check_in_date": "2024-01-02",
+              "check_out_date": "2024-01-06",
+              "departure_date": "2024-01-01",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Seychelles - Mahe Island",
+              "score": 76,
+              "check_in_date": "2024-01-07",
+              "check_out_date": "2024-01-11",
+              "departure_date": "2024-01-06",
+              "origin_city": "BLR"
+            },
+            {
+              "destination": "Japan - Okinawa",
+              "score": 74,
+              "check_in_date": "2024-01-12",
+              "check_out_date": "2024-01-16",
+              "departure_date": "2024-01-11",
+              "origin_city": "BLR"
+            }
+          ],
+          "refusal": null,
+          "annotations": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3672,
+      "completion_tokens": 854,
+      "total_tokens": 4526,
+      "prompt_tokens_details": {
+        "cached_tokens": 3456,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    },
+    "service_tier": "default",
+    "system_fingerprint": "fp_a288987b44"
+  }

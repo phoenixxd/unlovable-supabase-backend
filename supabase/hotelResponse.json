@@ -1,0 +1,2277 @@
+{
+  "data": [
+    {
+      "chainCode": "GZ",
+      "iataCode": "DPS",
+      "dupeId": 700094720,
+      "name": "TANAH MERAH RESORT AND GALLERY",
+      "hotelId": "GZDPSTMR",
+      "geoCode": {
+        "latitude": -8.4095,
+        "longitude": 115.189
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:50"
+    },
+    {
+      "chainCode": "VE",
+      "iataCode": "DPS",
+      "dupeId": 700022928,
+      "name": "DIWANGKARA HOLIDAY VILLA BEACH RESORT AN",
+      "hotelId": "VEDPS012",
+      "geoCode": {
+        "latitude": -8.67404,
+        "longitude": 115.2622
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:12"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700078729,
+      "name": "SERI VILLAS SEMINYAK",
+      "hotelId": "HSDPSADU",
+      "geoCode": {
+        "latitude": -8.69636,
+        "longitude": 115.168
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "DPS",
+      "dupeId": 700216833,
+      "name": "BW PREMIER SUNSET ROAD KUTA",
+      "hotelId": "BWDPS039",
+      "geoCode": {
+        "latitude": -8.69974,
+        "longitude": 115.17803
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EW",
+      "lastUpdate": "2025-06-03T10:19:34"
+    },
+    {
+      "chainCode": "DS",
+      "iataCode": "DPS",
+      "dupeId": 700013301,
+      "name": "ALILA UBUD",
+      "hotelId": "DSDPS795",
+      "geoCode": {
+        "latitude": -8.54472,
+        "longitude": 115.32487
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:54"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700050700,
+      "name": "NOVOTEL BALI NUSA DUA",
+      "hotelId": "RTDPSNOV",
+      "geoCode": {
+        "latitude": -8.81072,
+        "longitude": 115.22424
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "IL",
+      "iataCode": "DPS",
+      "dupeId": 501432281,
+      "name": "VILLA SANTAI",
+      "hotelId": "ILDPSJAL",
+      "geoCode": {
+        "latitude": -8.50928,
+        "longitude": 115.27166
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:32"
+    },
+    {
+      "chainCode": "SC",
+      "iataCode": "DPS",
+      "dupeId": 700145458,
+      "name": "LEGIAN GUEST HOUSE-BADUNG",
+      "hotelId": "SCDPS037",
+      "geoCode": {
+        "latitude": -8.70884,
+        "longitude": 115.16697
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:17:28"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "DPS",
+      "dupeId": 700000868,
+      "name": "LEGIAN BEACH HOTEL",
+      "hotelId": "YXDPS004",
+      "geoCode": {
+        "latitude": -8.70886,
+        "longitude": 115.16697
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094754,
+      "name": "J BOUTIQUE HOTEL",
+      "hotelId": "HSDPSAEZ",
+      "geoCode": {
+        "latitude": -8.73714,
+        "longitude": 115.16689
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "WI",
+      "iataCode": "DPS",
+      "dupeId": 700000880,
+      "name": "WESTIN RESORT NUSA DUA BALI",
+      "hotelId": "WIDPS035",
+      "geoCode": {
+        "latitude": -8.79567,
+        "longitude": 115.22986
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EM",
+      "lastUpdate": "2025-06-03T10:18:04"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700164133,
+      "name": "SUN ISLAND HOTEL KUTA",
+      "hotelId": "HSDPSAAY",
+      "geoCode": {
+        "latitude": -8.73024,
+        "longitude": 115.16712
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:55"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700175000,
+      "name": "PURI CENDANA RESORT",
+      "hotelId": "HSDPSAEF",
+      "geoCode": {
+        "latitude": -8.69225,
+        "longitude": 115.16112
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 501414371,
+      "name": "HOTEL TJAMPUHAN SPA",
+      "hotelId": "WVDPS930",
+      "geoCode": {
+        "latitude": -8.50498,
+        "longitude": 115.25524
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 501833426,
+      "name": "MELASTI BEACH RESORT - SPA",
+      "hotelId": "HSDPSAGA",
+      "geoCode": {
+        "latitude": -8.70281,
+        "longitude": 115.16712
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "TA",
+      "iataCode": "DPS",
+      "dupeId": 700163615,
+      "name": "THE WANGSA VILLAS",
+      "hotelId": "TADPS902",
+      "geoCode": {
+        "latitude": -8.7774,
+        "longitude": 115.22359
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:17:44"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700116921,
+      "name": "LE GRANDE BALI",
+      "hotelId": "WVDPSLGB",
+      "geoCode": {
+        "latitude": -0.21016,
+        "longitude": 113.99731
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700190112,
+      "name": "LV8 RESORT HOTEL",
+      "hotelId": "WVDPS321",
+      "geoCode": {
+        "latitude": -8.65583,
+        "longitude": 115.13417
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700188465,
+      "name": "RIMBA JIMBARAN BALI",
+      "hotelId": "WVDPS256",
+      "geoCode": {
+        "latitude": -8.76944,
+        "longitude": 115.17389
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700046501,
+      "name": "DEWI SRI",
+      "hotelId": "HSDPSAEV",
+      "geoCode": {
+        "latitude": -8.71743,
+        "longitude": 115.17652
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "CH",
+      "iataCode": "DPS",
+      "dupeId": 700163426,
+      "name": "TAMAN SUCI HOTEL",
+      "hotelId": "CHDPSTSH",
+      "geoCode": {
+        "latitude": -8.66344,
+        "longitude": 115.20809
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:16:02"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700149130,
+      "name": "UBUD GREEN RESORT VILLAS",
+      "hotelId": "WVDPSUGR",
+      "geoCode": {
+        "latitude": -8.49489,
+        "longitude": 115.2668
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "YH",
+      "iataCode": "DPS",
+      "dupeId": 700080704,
+      "name": "HARRIS HOTEL TUBAN",
+      "hotelId": "YHDPSHHT",
+      "geoCode": {
+        "latitude": -8.73943,
+        "longitude": 115.16786
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:44"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700047536,
+      "name": "RESTU BALI HOTEL",
+      "hotelId": "HSDPSAGQ",
+      "geoCode": {
+        "latitude": -8.71449,
+        "longitude": 115.17371
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "LX",
+      "iataCode": "DPS",
+      "dupeId": 700171525,
+      "name": "L HOTEL SEMINYAK BALI",
+      "hotelId": "LXDPSLHR",
+      "geoCode": {
+        "latitude": -8.67237,
+        "longitude": 115.16011
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:13"
+    },
+    {
+      "chainCode": "DH",
+      "iataCode": "DPS",
+      "dupeId": 700171525,
+      "name": "L HOTEL SEMINYAK",
+      "hotelId": "DHDPSAYZ",
+      "geoCode": {
+        "latitude": -8.683,
+        "longitude": 115.167
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:21:33"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094816,
+      "name": "BUNGA PERMAI",
+      "hotelId": "HSDPSAEY",
+      "geoCode": {
+        "latitude": -8.48018,
+        "longitude": 115.24732
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700146207,
+      "name": "THE SUNTI UBUD RESORT AND VILLA",
+      "hotelId": "HSDPSABG",
+      "geoCode": {
+        "latitude": -8.52331,
+        "longitude": 115.26323
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:55"
+    },
+    {
+      "chainCode": "DH",
+      "iataCode": "DPS",
+      "dupeId": 501251684,
+      "name": "ALAM BIDADARI SEMINYAK VILLAS & SPA",
+      "hotelId": "DHDPSAYO",
+      "geoCode": {
+        "latitude": -0.21012,
+        "longitude": 113.99723
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:21:32"
+    },
+    {
+      "chainCode": "BG",
+      "iataCode": "DPS",
+      "dupeId": 700038707,
+      "name": "BULGARI RESORT BALI",
+      "hotelId": "BGDPSBGB",
+      "geoCode": {
+        "latitude": -8.84612,
+        "longitude": 115.11886
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-24T07:11:05"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700042641,
+      "name": "KAYUMANIS JIMBARAN PRIVATE ESTATE",
+      "hotelId": "WVDPS598",
+      "geoCode": {
+        "latitude": -8.77243,
+        "longitude": 115.17078
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "CH",
+      "iataCode": "DPS",
+      "dupeId": 700145887,
+      "name": "HOTEL SANTIKA KUTA",
+      "hotelId": "CHDPSSAN",
+      "geoCode": {
+        "latitude": -8.73559,
+        "longitude": 115.17781
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:16:02"
+    },
+    {
+      "chainCode": "WH",
+      "iataCode": "DPS",
+      "dupeId": 700141566,
+      "name": "W RETREAT AND SPA BALI",
+      "hotelId": "WHDPS221",
+      "geoCode": {
+        "latitude": -8.67756,
+        "longitude": 115.15015
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EM",
+      "lastUpdate": "2025-06-03T10:18:01"
+    },
+    {
+      "chainCode": "DH",
+      "iataCode": "DPS",
+      "dupeId": 700094770,
+      "name": "SING KEN KEN BOUTIQUE HOTEL",
+      "hotelId": "DHDPSAZG",
+      "geoCode": {
+        "latitude": -0.21012,
+        "longitude": 113.99723
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:21:33"
+    },
+    {
+      "chainCode": "RA",
+      "iataCode": "DPS",
+      "dupeId": 700020046,
+      "name": "RAMADA RESORT BENOA BALI",
+      "hotelId": "RADPSNRX",
+      "geoCode": {
+        "latitude": -8.75876,
+        "longitude": 115.22151
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "WR",
+      "lastUpdate": "2025-06-03T10:17:08"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700117241,
+      "name": "TAMAN SARI VILLA - SPA",
+      "hotelId": "HSDPSAFW",
+      "geoCode": {
+        "latitude": -8.77422,
+        "longitude": 115.17022
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700011476,
+      "name": "MERCURE RESORT SANUR",
+      "hotelId": "RTDPSRAD",
+      "geoCode": {
+        "latitude": -8.71092,
+        "longitude": 115.25405
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094734,
+      "name": "SITARA PADI VILLA",
+      "hotelId": "HSDPSAHZ",
+      "geoCode": {
+        "latitude": 1.11483,
+        "longitude": 117.86795
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700012021,
+      "name": "ROSANI",
+      "hotelId": "HSDPSAEC",
+      "geoCode": {
+        "latitude": -8.70978,
+        "longitude": 115.17029
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700008761,
+      "name": "GRAND ISTANA RAMA HOTEL",
+      "hotelId": "WVDPS870",
+      "geoCode": {
+        "latitude": -8.72247,
+        "longitude": 115.17342
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "DS",
+      "iataCode": "DPS",
+      "dupeId": 700112405,
+      "name": "ALILA VILLAS SOORI",
+      "hotelId": "DSDPSAVS",
+      "geoCode": {
+        "latitude": -8.57675,
+        "longitude": 115.05425
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:54"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "DPS",
+      "dupeId": 700008229,
+      "name": "HOLIDAY INN RESORT BARUNA",
+      "hotelId": "HIDPSC0A",
+      "geoCode": {
+        "latitude": -8.73661,
+        "longitude": 115.16366
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "6C",
+      "lastUpdate": "2025-06-03T10:19:13"
+    },
+    {
+      "chainCode": "PF",
+      "iataCode": "DPS",
+      "dupeId": 700009364,
+      "name": "PAN PACIFIC NIRWANA BALI RESORT",
+      "hotelId": "PFDPSMER",
+      "geoCode": {
+        "latitude": -8.62301,
+        "longitude": 115.09043
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "GL",
+      "lastUpdate": "2025-06-03T10:16:39"
+    },
+    {
+      "chainCode": "YH",
+      "iataCode": "DPS",
+      "dupeId": 700141421,
+      "name": "HARRIS HOTEL RAYA KUTA BALI",
+      "hotelId": "YHDPSHRK",
+      "geoCode": {
+        "latitude": -8.72861,
+        "longitude": 115.17715
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:44"
+    },
+    {
+      "chainCode": "DS",
+      "iataCode": "DPS",
+      "dupeId": 700190292,
+      "name": "DELMANGO VILLA ESTATE",
+      "hotelId": "DSDPSDMV",
+      "geoCode": {
+        "latitude": -8.69701,
+        "longitude": 115.17052
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:54"
+    },
+    {
+      "chainCode": "FG",
+      "iataCode": "DPS",
+      "dupeId": 700144521,
+      "name": "BALI KUTA RESORT BY SWISS-BELHOTEL",
+      "hotelId": "FGDPS393",
+      "geoCode": {
+        "latitude": -8.71621,
+        "longitude": 115.179
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:16:35"
+    },
+    {
+      "chainCode": "DH",
+      "iataCode": "DPS",
+      "dupeId": 700222568,
+      "name": "HARPER KUTA HOTEL",
+      "hotelId": "DHDPSAYL",
+      "geoCode": {
+        "latitude": -0.21012,
+        "longitude": 113.99723
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:21:32"
+    },
+    {
+      "chainCode": "LW",
+      "iataCode": "DPS",
+      "dupeId": 700042087,
+      "name": "THE CHEDI CLUB TANAH GAJAH",
+      "hotelId": "LWDPS809",
+      "geoCode": {
+        "latitude": -8.49994,
+        "longitude": 115.26666
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:20:30"
+    },
+    {
+      "chainCode": "IC",
+      "iataCode": "DPS",
+      "dupeId": 700004997,
+      "name": "INTERCONTINENTAL BALI RESORT",
+      "hotelId": "ICDPSICA",
+      "geoCode": {
+        "latitude": -8.77427,
+        "longitude": 115.17092
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "6C",
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700128049,
+      "name": "ASTON KUTA HOTEL AND RESIDENCE",
+      "hotelId": "WVDPS167",
+      "geoCode": {
+        "latitude": -8.71587,
+        "longitude": 115.20305
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 501697853,
+      "name": "MERCURE BALI LEGIAN",
+      "hotelId": "RTDPSKUT",
+      "geoCode": {
+        "latitude": -8.70803,
+        "longitude": 115.17195
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "FG",
+      "iataCode": "DPS",
+      "dupeId": 700000867,
+      "name": "THE JAYAKARTA BALI - KUTA",
+      "hotelId": "FGDPS903",
+      "geoCode": {
+        "latitude": -6.31873,
+        "longitude": 106.76645
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:16:35"
+    },
+    {
+      "chainCode": "YH",
+      "iataCode": "DPS",
+      "dupeId": 501605348,
+      "name": "ASANA AGUNG PUTRA BALI",
+      "hotelId": "YHDPSAAP",
+      "geoCode": {
+        "latitude": -8.72054,
+        "longitude": 115.17324
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:44"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 501833476,
+      "name": "THE KAYANA VILLA",
+      "hotelId": "HSDPSAML",
+      "geoCode": {
+        "latitude": -8.6777,
+        "longitude": 115.15365
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "DS",
+      "iataCode": "DPS",
+      "dupeId": 700042478,
+      "name": "THE ELYSIAN",
+      "hotelId": "DSDPS887",
+      "geoCode": {
+        "latitude": -8.68767,
+        "longitude": 115.15724
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:54"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700071679,
+      "name": "PURI WULANDARI BOUTIQUE RESORT - SPA",
+      "hotelId": "HSDPSABM",
+      "geoCode": {
+        "latitude": -8.46618,
+        "longitude": 115.24287
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:55"
+    },
+    {
+      "chainCode": "DH",
+      "iataCode": "DPS",
+      "dupeId": 700162902,
+      "name": "CENTARA GRAND VILLAS NUSA DUA",
+      "hotelId": "DHDPSAYP",
+      "geoCode": {
+        "latitude": -0.21012,
+        "longitude": 113.99723
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:21:32"
+    },
+    {
+      "chainCode": "SI",
+      "iataCode": "DPS",
+      "dupeId": 700146878,
+      "name": "SHERATON BALI KUTA RESORT",
+      "hotelId": "SIDPS556",
+      "geoCode": {
+        "latitude": -8.71721,
+        "longitude": 115.16931
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EM",
+      "lastUpdate": "2025-06-03T10:17:39"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700183452,
+      "name": "THE KUTA BEACH HERITAGE HOTEL",
+      "hotelId": "RTDPSMGA",
+      "geoCode": {
+        "latitude": -8.72078,
+        "longitude": 115.16979
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "YH",
+      "iataCode": "DPS",
+      "dupeId": 501286928,
+      "name": "HARRIS HTL RES SUNSET RD KUTA",
+      "hotelId": "YHDPSRSK",
+      "geoCode": {
+        "latitude": -8.73816,
+        "longitude": 115.16818
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:44"
+    },
+    {
+      "chainCode": "LX",
+      "iataCode": "DPS",
+      "dupeId": 700046545,
+      "name": "SPA VILLAGE RESORT TEMBOK BALI",
+      "hotelId": "LXDPSVRT",
+      "geoCode": {
+        "latitude": -8.16226,
+        "longitude": 115.4452
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:24"
+    },
+    {
+      "chainCode": "GZ",
+      "iataCode": "DPS",
+      "dupeId": 700163172,
+      "name": "WHITE LOTUS VILLAS BALI",
+      "hotelId": "GZDPSWLV",
+      "geoCode": {
+        "latitude": -8.67482,
+        "longitude": 115.15768
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:50"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "DPS",
+      "dupeId": 700165204,
+      "name": "BW KUTA VILLA",
+      "hotelId": "BWDPS036",
+      "geoCode": {
+        "latitude": -8.73298,
+        "longitude": 115.17636
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EW",
+      "lastUpdate": "2025-06-03T10:19:13"
+    },
+    {
+      "chainCode": "XR",
+      "iataCode": "DPS",
+      "dupeId": 700056102,
+      "name": "THE ST REGIS BALI RESORT",
+      "hotelId": "XRDPS708",
+      "geoCode": {
+        "latitude": -6.26799,
+        "longitude": 107.00477
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EM",
+      "lastUpdate": "2025-06-03T10:18:40"
+    },
+    {
+      "chainCode": "BY",
+      "iataCode": "DPS",
+      "dupeId": 700127659,
+      "name": "BANYAN TREE UNGASAN",
+      "hotelId": "BYDPSBTU",
+      "geoCode": {
+        "latitude": -8.8434,
+        "longitude": 115.16087
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:19:21"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "DPS",
+      "dupeId": 501423137,
+      "name": "PAT - MASE",
+      "hotelId": "YXDPS689",
+      "geoCode": {
+        "latitude": -8.76944,
+        "longitude": 115.17389
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "LW",
+      "iataCode": "DPS",
+      "dupeId": 700162954,
+      "name": "THE MULIA - NUSA DUA, BALI",
+      "hotelId": "LWDPS846",
+      "geoCode": {
+        "latitude": -8.8157,
+        "longitude": 115.22531
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:20:30"
+    },
+    {
+      "chainCode": "HI",
+      "iataCode": "DPS",
+      "dupeId": 700225179,
+      "name": "HOLIDAY INN EXP BALI RAYA KUTA",
+      "hotelId": "HIDPS835",
+      "geoCode": {
+        "latitude": -8.72551,
+        "longitude": 115.17667
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "6C",
+      "lastUpdate": "2025-06-03T10:20:03"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700042640,
+      "name": "KAYUMANIS UBUD PRIVATE VILLA AND SPA",
+      "hotelId": "WVDPS596",
+      "geoCode": {
+        "latitude": -8.51965,
+        "longitude": 115.25028
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094788,
+      "name": "ELLORA VILLAS",
+      "hotelId": "HSDPSAGM",
+      "geoCode": {
+        "latitude": -8.68714,
+        "longitude": 115.26163
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "DS",
+      "iataCode": "DPS",
+      "dupeId": 700189859,
+      "name": "LUNA2 STUDIOTEL",
+      "hotelId": "DSDPSLUN",
+      "geoCode": {
+        "latitude": -8.69082,
+        "longitude": 115.15812
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:54"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094749,
+      "name": "RATNA",
+      "hotelId": "HSDPSADL",
+      "geoCode": {
+        "latitude": -8.72654,
+        "longitude": 115.17658
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700033048,
+      "name": "RISATA BALI RESORT - SPA",
+      "hotelId": "HSDPSAMP",
+      "geoCode": {
+        "latitude": -8.73736,
+        "longitude": 115.16585
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "DH",
+      "iataCode": "DPS",
+      "dupeId": 700181505,
+      "name": "FAIRMONT SANUR BEACH (FORMELY REGENT SAN",
+      "hotelId": "DHDPSAXS",
+      "geoCode": {
+        "latitude": -0.21012,
+        "longitude": 113.99723
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:21:32"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "DPS",
+      "dupeId": 700219473,
+      "name": "SWISS-BELRESORT WATU JIMBAR",
+      "hotelId": "YXDPSBWJ",
+      "geoCode": {
+        "latitude": -8.68901,
+        "longitude": 115.26348
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "DPS",
+      "dupeId": 700145893,
+      "name": "BEST WESTERN RESORT KUTA",
+      "hotelId": "BWDPS033",
+      "geoCode": {
+        "latitude": -8.73183,
+        "longitude": 115.17194
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EW",
+      "lastUpdate": "2025-06-03T10:19:15"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 501292592,
+      "name": "RAMA BEACH RESORT - VILLAS",
+      "hotelId": "HSDPSALU",
+      "geoCode": {
+        "latitude": -8.73673,
+        "longitude": 115.1648
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "YH",
+      "iataCode": "DPS",
+      "dupeId": 700004996,
+      "name": "AYODYA RESORT BALI",
+      "hotelId": "YHDPSARB",
+      "geoCode": {
+        "latitude": -8.80795,
+        "longitude": 115.22795
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:44"
+    },
+    {
+      "chainCode": "FS",
+      "iataCode": "DPS",
+      "dupeId": 700034165,
+      "name": "FOUR SEASONS BALI AT JIMBARAN BAY",
+      "hotelId": "FSDPS739",
+      "geoCode": {
+        "latitude": -8.65607,
+        "longitude": 115.22178
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:33"
+    },
+    {
+      "chainCode": "BW",
+      "iataCode": "DPS",
+      "dupeId": 700165203,
+      "name": "BEST WESTERN KUTA BEACH",
+      "hotelId": "BWDPS035",
+      "geoCode": {
+        "latitude": -8.71266,
+        "longitude": 115.16807
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EW",
+      "lastUpdate": "2025-06-20T09:00:21"
+    },
+    {
+      "chainCode": "SM",
+      "iataCode": "DPS",
+      "dupeId": 700000875,
+      "name": "MELIA BALI - THE GARDEN VILLAS",
+      "hotelId": "SMDPSBAL",
+      "geoCode": {
+        "latitude": -8.40105,
+        "longitude": 115.18993
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:17:40"
+    },
+    {
+      "chainCode": "FG",
+      "iataCode": "DPS",
+      "dupeId": 700146458,
+      "name": "UMALAS HOTEL SEMINYAK-KUTA BALI",
+      "hotelId": "FGDPSUMA",
+      "geoCode": {
+        "latitude": -8.66906,
+        "longitude": 115.15805
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:16:35"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700176174,
+      "name": "MERCURE BALI NUSA DUA",
+      "hotelId": "RTDPSMEE",
+      "geoCode": {
+        "latitude": -8.80692,
+        "longitude": 115.22074
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 501833453,
+      "name": "MAYALOKA VILLAS",
+      "hotelId": "HSDPSAIC",
+      "geoCode": {
+        "latitude": -8.67512,
+        "longitude": 115.15354
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "SB",
+      "iataCode": "DPS",
+      "dupeId": 700194371,
+      "name": "SOFITEL BALI NUSA DUA",
+      "hotelId": "SBDPSNUS",
+      "geoCode": {
+        "latitude": -8.79156,
+        "longitude": 115.23032
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:29"
+    },
+    {
+      "chainCode": "GZ",
+      "iataCode": "DPS",
+      "dupeId": 700162204,
+      "name": "SUDAMALA SUITES AND VILLAS",
+      "hotelId": "GZDPSSUD",
+      "geoCode": {
+        "latitude": -8.70769,
+        "longitude": 115.25611
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:50"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094755,
+      "name": "HELICONIA VILLA",
+      "hotelId": "HSDPSAKW",
+      "geoCode": {
+        "latitude": -8.68357,
+        "longitude": 115.16362
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700155995,
+      "name": "U PAASHA SEMINYAK BALI",
+      "hotelId": "WVDPS928",
+      "geoCode": {
+        "latitude": -0.21016,
+        "longitude": 113.99731
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "GA",
+      "iataCode": "DPS",
+      "dupeId": 700149644,
+      "name": "ANANTARA ULUWATU,BALI",
+      "hotelId": "GADPS542",
+      "geoCode": {
+        "latitude": -8.81628,
+        "longitude": 115.09626
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "GL",
+      "lastUpdate": "2025-06-03T10:19:38"
+    },
+    {
+      "chainCode": "GZ",
+      "iataCode": "DPS",
+      "dupeId": 700049605,
+      "name": "VILLA SEMINYAK ESTATE AND SPA",
+      "hotelId": "GZDPSVSE",
+      "geoCode": {
+        "latitude": -8.69543,
+        "longitude": 115.17211
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:50"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700000878,
+      "name": "NOVOTEL BALI BENOA",
+      "hotelId": "RTDPSBEN",
+      "geoCode": {
+        "latitude": -8.76423,
+        "longitude": 115.2224
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "CH",
+      "iataCode": "DPS",
+      "dupeId": 700004999,
+      "name": "CLUB BALI MIRAGE",
+      "hotelId": "CHDPSH06",
+      "geoCode": {
+        "latitude": -8.7475,
+        "longitude": 115.166
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:16:02"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "DPS",
+      "dupeId": 700000872,
+      "name": "CANDI BEACH COTTAGE",
+      "hotelId": "YXDPS003",
+      "geoCode": {
+        "latitude": -8.5038,
+        "longitude": 115.55343
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 501833441,
+      "name": "WAKA GANGGA",
+      "hotelId": "HSDPSAHE",
+      "geoCode": {
+        "latitude": -8.58703,
+        "longitude": 115.06507
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "EP",
+      "iataCode": "DPS",
+      "dupeId": 700189861,
+      "name": "THE SPOT LEGIAN",
+      "hotelId": "EPDPSTHE",
+      "geoCode": {
+        "latitude": -8.69713,
+        "longitude": 115.16873
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:37"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700144463,
+      "name": "BALI SWISS VILLA",
+      "hotelId": "HSDPSAJR",
+      "geoCode": {
+        "latitude": -8.68732,
+        "longitude": 115.17409
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "XT",
+      "iataCode": "DPS",
+      "dupeId": 700011817,
+      "name": "THE SEMINYAK BEACH RESORT & SPA",
+      "hotelId": "XTDPSSBR",
+      "geoCode": {
+        "latitude": -8.68609,
+        "longitude": 115.15398
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094713,
+      "name": "DESA SENI A VILLAGE RESORT",
+      "hotelId": "HSDPSAIE",
+      "geoCode": {
+        "latitude": -6.23396,
+        "longitude": 106.41724
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 501447401,
+      "name": "HANGING GARDENS UBUD BALI",
+      "hotelId": "WVDPS619",
+      "geoCode": {
+        "latitude": -8.41257,
+        "longitude": 115.23888
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "DH",
+      "iataCode": "DPS",
+      "dupeId": 501442522,
+      "name": "THE TUSITA HOTEL",
+      "hotelId": "DHDPSAZT",
+      "geoCode": {
+        "latitude": -0.21012,
+        "longitude": 113.99723
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:21:33"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094740,
+      "name": "COCOS VILLA",
+      "hotelId": "HSDPSABR",
+      "geoCode": {
+        "latitude": -8.65377,
+        "longitude": 115.16339
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:55"
+    },
+    {
+      "chainCode": "DS",
+      "iataCode": "DPS",
+      "dupeId": 700189858,
+      "name": "LUNA2 PRIVATE HOTEL",
+      "hotelId": "DSDPSLPH",
+      "geoCode": {
+        "latitude": -8.69083,
+        "longitude": 115.15814
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:54"
+    },
+    {
+      "chainCode": "CH",
+      "iataCode": "DPS",
+      "dupeId": 700163428,
+      "name": "TAMAN SUCI SUITE AND VILLAS",
+      "hotelId": "CHDPSTSV",
+      "geoCode": {
+        "latitude": -8.66826,
+        "longitude": 115.24092
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:16:02"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094747,
+      "name": "PURI TANAH LOT",
+      "hotelId": "HSDPSAEJ",
+      "geoCode": {
+        "latitude": -8.71019,
+        "longitude": 115.17042
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "GZ",
+      "iataCode": "DPS",
+      "dupeId": 700189862,
+      "name": "UPPALA SUITE KEROBOKAN",
+      "hotelId": "GZDPSUSK",
+      "geoCode": {
+        "latitude": -8.6763,
+        "longitude": 115.16968
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:50"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700054503,
+      "name": "ADIRAMA BEACH",
+      "hotelId": "HSDPSAEU",
+      "geoCode": {
+        "latitude": -8.16596,
+        "longitude": 115.01279
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "DPS",
+      "dupeId": 700188671,
+      "name": "SWISS-BELHOTEL RAINFOREST",
+      "hotelId": "YXDPSSBR",
+      "geoCode": {
+        "latitude": -8.71137,
+        "longitude": 115.18576
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700042480,
+      "name": "KAYUMANIS NUSA DUA PRIVATE VILLA AND SPA",
+      "hotelId": "WVDPS601",
+      "geoCode": {
+        "latitude": -8.79373,
+        "longitude": 115.22836
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "DPS",
+      "dupeId": 501447955,
+      "name": "KARMA JIMBARAN",
+      "hotelId": "YXDPSKAR",
+      "geoCode": {
+        "latitude": -8.78267,
+        "longitude": 115.16247
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094735,
+      "name": "DANOYA VILLA",
+      "hotelId": "HSDPSADI",
+      "geoCode": {
+        "latitude": -8.67277,
+        "longitude": 115.15499
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "YH",
+      "iataCode": "DPS",
+      "dupeId": 700211738,
+      "name": "HARRIS HOTEL BUKIT JIMBARAN",
+      "hotelId": "YHDPSHBJ",
+      "geoCode": {
+        "latitude": -8.81209,
+        "longitude": 115.15736
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:44"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "DPS",
+      "dupeId": 700147479,
+      "name": "COURTYARD BALI NUSA MARRIOTT",
+      "hotelId": "CYDPSCYC",
+      "geoCode": {
+        "latitude": -8.80726,
+        "longitude": 115.22636
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EM",
+      "lastUpdate": "2025-06-03T10:16:05"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700183451,
+      "name": "IBIS STYLES BALI KUTA CIRCLE",
+      "hotelId": "RTDPSIBS",
+      "geoCode": {
+        "latitude": -8.72189,
+        "longitude": 115.18491
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "YH",
+      "iataCode": "DPS",
+      "dupeId": 501286758,
+      "name": "HARRIS HTL RES RIVERVIEW KUTA",
+      "hotelId": "YHDPSRRK",
+      "geoCode": {
+        "latitude": -8.71747,
+        "longitude": 115.18089
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:44"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700189857,
+      "name": "IBIS STYLES BALI KUTA LEGIAN",
+      "hotelId": "RTDPSBKU",
+      "geoCode": {
+        "latitude": -8.708,
+        "longitude": 115.17898
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700162203,
+      "name": "IBIS STYLES BALI BENOA",
+      "hotelId": "RTDPSIBI",
+      "geoCode": {
+        "latitude": -8.7774,
+        "longitude": 115.22359
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700150209,
+      "name": "IBIS STYLES BALI DENPASAR",
+      "hotelId": "RTDPSALS",
+      "geoCode": {
+        "latitude": -8.67937,
+        "longitude": 115.20486
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "GZ",
+      "iataCode": "DPS",
+      "dupeId": 700038032,
+      "name": "THE SEMINYAK SUITE PRIVATE VILLA",
+      "hotelId": "GZDPSSES",
+      "geoCode": {
+        "latitude": -8.69525,
+        "longitude": 115.1668
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:50"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "DPS",
+      "dupeId": 700117400,
+      "name": "NEW KUTA HOTEL A LEXINGTON",
+      "hotelId": "YXDPSKUT",
+      "geoCode": {
+        "latitude": -8.80233,
+        "longitude": 115.12259
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700049606,
+      "name": "THE GANGSA PRIVATE VILLA",
+      "hotelId": "WVDPS077",
+      "geoCode": {
+        "latitude": -8.69912,
+        "longitude": 115.25742
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "CY",
+      "iataCode": "DPS",
+      "dupeId": 700222569,
+      "name": "COURTYARD SEMINYAK MARRIOTT",
+      "hotelId": "CYDPSSMC",
+      "geoCode": {
+        "latitude": -8.69187,
+        "longitude": 115.16339
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EM",
+      "lastUpdate": "2025-06-03T10:16:05"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700171030,
+      "name": "THE KUTA PLAYA HOTEL - VILLAS",
+      "hotelId": "HSDPSAAZ",
+      "geoCode": {
+        "latitude": -8.71238,
+        "longitude": 115.16764
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:55"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094741,
+      "name": "BALI NYUH GADING VILLA",
+      "hotelId": "HSDPSAHF",
+      "geoCode": {
+        "latitude": 1.11483,
+        "longitude": 117.86795
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "NK",
+      "iataCode": "DPS",
+      "dupeId": 700000877,
+      "name": "GRAND NIKKO BALI",
+      "hotelId": "NKDPS001",
+      "geoCode": {
+        "latitude": -8.82512,
+        "longitude": 115.21819
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "NK",
+      "lastUpdate": "2025-06-03T10:20:23"
+    },
+    {
+      "chainCode": "RT",
+      "iataCode": "DPS",
+      "dupeId": 700025181,
+      "name": "THE ROYAL BEACH SEMINYAK BALI",
+      "hotelId": "RTDPSSOF",
+      "geoCode": {
+        "latitude": -8.69176,
+        "longitude": 115.15965
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "RT",
+      "lastUpdate": "2025-06-03T10:17:15"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 501414370,
+      "name": "PITA MAHA RESORT AND SPA",
+      "hotelId": "WVDPS926",
+      "geoCode": {
+        "latitude": -8.5015,
+        "longitude": 115.25278
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700054498,
+      "name": "THE ROYAL PITA MAHA",
+      "hotelId": "WVDPS925",
+      "geoCode": {
+        "latitude": -8.4745,
+        "longitude": 115.24491
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700191282,
+      "name": "PARK REGIS KUTA BALI",
+      "hotelId": "WVDPS277",
+      "geoCode": {
+        "latitude": -8.71538,
+        "longitude": 115.18114
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700149912,
+      "name": "DE UMA LOKHA LUXURY VILLA - SPA",
+      "hotelId": "HSDPSABH",
+      "geoCode": {
+        "latitude": -8.65939,
+        "longitude": 115.15043
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:55"
+    },
+    {
+      "chainCode": "RZ",
+      "iataCode": "DPS",
+      "dupeId": 700220954,
+      "name": "THE RITZ-CARLTON BALI",
+      "hotelId": "RZDPSSWZ",
+      "geoCode": {
+        "latitude": -8.82989,
+        "longitude": 115.21413
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EM",
+      "lastUpdate": "2025-06-03T10:17:29"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 501833430,
+      "name": "BALI BALIKU LUXURY VILLA",
+      "hotelId": "HSDPSAGK",
+      "geoCode": {
+        "latitude": -8.78131,
+        "longitude": 115.16461
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094790,
+      "name": "KEMBALI BALI",
+      "hotelId": "HSDPSAFM",
+      "geoCode": {
+        "latitude": -8.69125,
+        "longitude": 115.15916
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "GA",
+      "iataCode": "DPS",
+      "dupeId": 700052544,
+      "name": "ANANTARA SEMINYAK,BALI",
+      "hotelId": "GADPS026",
+      "geoCode": {
+        "latitude": -8.69242,
+        "longitude": 115.15887
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "GL",
+      "lastUpdate": "2025-06-03T10:19:38"
+    },
+    {
+      "chainCode": "WK",
+      "iataCode": "DPS",
+      "dupeId": 700028059,
+      "name": "WARWICK IBAH LUXURY VILLAS",
+      "hotelId": "WKDPS629",
+      "geoCode": {
+        "latitude": -8.67756,
+        "longitude": 115.2133
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:07"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700054551,
+      "name": "C151 LUXURY SMART VILLAS RESORT",
+      "hotelId": "WVDPS333",
+      "geoCode": {
+        "latitude": -8.683,
+        "longitude": 115.167
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "WV",
+      "iataCode": "DPS",
+      "dupeId": 700013487,
+      "name": "AYANA RESORT AND SPA",
+      "hotelId": "WVDPSRZZ",
+      "geoCode": {
+        "latitude": -8.78562,
+        "longitude": 115.13881
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:18:18"
+    },
+    {
+      "chainCode": "DS",
+      "iataCode": "DPS",
+      "dupeId": 700079769,
+      "name": "ALILA VILLAS ULUWATU",
+      "hotelId": "DSDPSAVU",
+      "geoCode": {
+        "latitude": -8.82842,
+        "longitude": 115.13466
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:54"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "DPS",
+      "dupeId": 700000866,
+      "name": "PADMA RESORT BALI AT LEGIAN",
+      "hotelId": "YXDPS383",
+      "geoCode": {
+        "latitude": -8.70587,
+        "longitude": 115.16723
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700174326,
+      "name": "KOMUNE RESORT - BEACH CLUB BALI",
+      "hotelId": "HSDPSAPD",
+      "geoCode": {
+        "latitude": -8.598,
+        "longitude": 115.33885
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:20:01"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700094731,
+      "name": "NIRMALA HOTEL - RESORT",
+      "hotelId": "HSDPSAHO",
+      "geoCode": {
+        "latitude": -8.78192,
+        "longitude": 115.17434
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:59"
+    },
+    {
+      "chainCode": "DH",
+      "iataCode": "DPS",
+      "dupeId": 700116919,
+      "name": "BOUNTY HOTEL",
+      "hotelId": "DHDPSAWZ",
+      "geoCode": {
+        "latitude": -0.21012,
+        "longitude": 113.99723
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "TC",
+      "lastUpdate": "2025-06-03T10:21:32"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 501833412,
+      "name": "THE BALI KHAMA BEACH RESORT - SPA",
+      "hotelId": "HSDPSAFB",
+      "geoCode": {
+        "latitude": -8.76551,
+        "longitude": 115.22198
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    },
+    {
+      "chainCode": "GI",
+      "iataCode": "DPS",
+      "dupeId": 700220683,
+      "name": "HILTON GARDEN INN BALI NGURAH RAI AIRPOR",
+      "hotelId": "GIDPS963",
+      "geoCode": {
+        "latitude": -8.74302,
+        "longitude": 115.17092
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EH",
+      "lastUpdate": "2025-06-03T10:21:49"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 700000863,
+      "name": "IDA",
+      "hotelId": "HSDPSAOQ",
+      "geoCode": {
+        "latitude": -8.72302,
+        "longitude": 115.17238
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:20:01"
+    },
+    {
+      "chainCode": "YX",
+      "iataCode": "DPS",
+      "dupeId": 700149890,
+      "name": "SWISS-BELHOTEL SEGARA",
+      "hotelId": "YXDPSSWI",
+      "geoCode": {
+        "latitude": -0.21016,
+        "longitude": 113.99731
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:18:41"
+    },
+    {
+      "chainCode": "MD",
+      "iataCode": "DPS",
+      "dupeId": 700179448,
+      "name": "LE MERIDIEN BALI JIMBARAN",
+      "hotelId": "MDDPS744",
+      "geoCode": {
+        "latitude": -8.78239,
+        "longitude": 115.16265
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "masterChainCode": "EM",
+      "lastUpdate": "2025-06-03T10:20:21"
+    },
+    {
+      "chainCode": "HS",
+      "iataCode": "DPS",
+      "dupeId": 501833385,
+      "name": "THE VILLAS AMASYA",
+      "hotelId": "HSDPSABX",
+      "geoCode": {
+        "latitude": -8.68427,
+        "longitude": 115.15891
+      },
+      "address": {
+        "countryCode": "ID"
+      },
+      "lastUpdate": "2025-06-03T10:19:57"
+    }
+  ],
+  "meta": {
+    "count": 147,
+    "links": {
+      "self": "https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-city?cityCode=DPS"
+    }
+  }
+}
