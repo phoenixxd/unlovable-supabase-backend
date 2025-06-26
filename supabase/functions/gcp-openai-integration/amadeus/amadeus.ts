@@ -1,12 +1,17 @@
-import { AmadeusHotelOffersResponse, AmadeusHotelListResponse, AmadeusHotel, AmadeusFlightOffersResponse } from "./model.ts";
+import {
+  AmadeusFlightOffersResponse,
+  AmadeusHotel,
+  AmadeusHotelListResponse,
+  AmadeusHotelOffersResponse,
+} from "./model.ts";
 
 declare const Deno: { env: { get(key: string): string | undefined } };
 
 // amadeus.ts
-const amadeusApiKey = Deno.env.get('AMADEUS_API_KEY');
-const amadeusApiSecret = Deno.env.get('AMADEUS_API_SECRET');
+const amadeusApiKey = Deno.env.get("AMADEUS_API_KEY");
+const amadeusApiSecret = Deno.env.get("AMADEUS_API_SECRET");
 
-let cachedAccessToken: string = '';
+let cachedAccessToken: string = "";
 let accessTokenExpiry: number | null = null;
 
 // Add types for raw Amadeus hotel offer and offer
@@ -26,24 +31,46 @@ interface AmadeusRawOffer {
   room?: unknown;
 }
 
+// Retry configuration
+const RETRY_DELAYS = [500, 1000, 2000]; // 500ms, 1s, 2s
+const MAX_RETRIES = 3;
+
+// Helper function to add jitter to delay
+function addJitter(delay: number): number {
+  const jitter = Math.random() * 0.1 * delay; // 10% jitter
+  return delay + jitter;
+}
+
+// Helper function to sleep
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export async function getAmadeusAccessToken(): Promise<string> {
   if (!amadeusApiKey || !amadeusApiSecret) {
-    throw new Error('Amadeus API key and secret must be set in environment variables');
+    throw new Error(
+      "Amadeus API key and secret must be set in environment variables",
+    );
   }
   // If we have a cached token and it's not expired, return it
-  if (cachedAccessToken && accessTokenExpiry && Date.now() < accessTokenExpiry) {
+  if (
+    cachedAccessToken && accessTokenExpiry && Date.now() < accessTokenExpiry
+  ) {
     return cachedAccessToken;
   }
-  const response = await fetch('https://test.api.amadeus.com/v1/security/oauth2/token', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({
-      grant_type: 'client_credentials',
-      client_id: amadeusApiKey,
-      client_secret: amadeusApiSecret,
-    }),
-  });
-  if (!response.ok) throw new Error('Amadeus auth failed');
+  const response = await fetch(
+    "https://test.api.amadeus.com/v1/security/oauth2/token",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        grant_type: "client_credentials",
+        client_id: amadeusApiKey,
+        client_secret: amadeusApiSecret,
+      }),
+    },
+  );
+  if (!response.ok) throw new Error("Amadeus auth failed");
   const data = await response.json();
   cachedAccessToken = data.access_token;
   // expires_in is in seconds
@@ -51,60 +78,141 @@ export async function getAmadeusAccessToken(): Promise<string> {
   return cachedAccessToken;
 }
 
-async function fetchWithAutoRefresh<T>(url: string, options: RequestInit): Promise<T> {
-  let accessToken = await getAmadeusAccessToken();
-  let resp = await fetch(url, { ...options, headers: { ...options.headers, Authorization: `Bearer ${accessToken}` } });
-  if (resp.status === 401) {
-    // Try to parse error code
+async function fetchWithRetry<T>(
+  url: string,
+  options: RequestInit,
+): Promise<T> {
+  let lastError: Error | null = null;
+
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     try {
-      const errorBody = await resp.clone().json();
-      if (errorBody.errors && errorBody.errors[0]?.code === 38192) {
-        // Access token expired, refresh and retry once
-        cachedAccessToken = '';
-        accessToken = await getAmadeusAccessToken();
-        resp = await fetch(url, { ...options, headers: { ...options.headers, Authorization: `Bearer ${accessToken}` } });
+      let accessToken = await getAmadeusAccessToken();
+      let resp = await fetch(url, {
+        ...options,
+        headers: { ...options.headers, Authorization: `Bearer ${accessToken}` },
+      });
+
+      // Handle 401 token expiration
+      if (resp.status === 401) {
+        try {
+          const errorBody = await resp.clone().json();
+          if (errorBody.errors && errorBody.errors[0]?.code === 38192) {
+            // Access token expired, refresh and retry once
+            cachedAccessToken = "";
+            accessToken = await getAmadeusAccessToken();
+            resp = await fetch(url, {
+              ...options,
+              headers: {
+                ...options.headers,
+                Authorization: `Bearer ${accessToken}`,
+              },
+            });
+          }
+        } catch {
+          throw new Error("Amadeus API call failed with 401");
+        }
       }
-    } catch {
-      throw new Error('Amadeus API call failed with 401');
+
+      // Handle 429 rate limit with retry logic
+      if (resp.status === 429) {
+        const errorBody = await resp.clone().json();
+        if (errorBody.errors && errorBody.errors[0]?.code === 38194) {
+          if (attempt < MAX_RETRIES) {
+            const delay = addJitter(RETRY_DELAYS[attempt]);
+            console.log(
+              `Rate limit hit (attempt ${attempt + 1}/${
+                MAX_RETRIES + 1
+              }), retrying in ${delay.toFixed(0)}ms...`,
+            );
+            await sleep(delay);
+            continue; // Retry the request
+          } else {
+            throw new Error(
+              `Rate limit exceeded after ${MAX_RETRIES + 1} attempts`,
+            );
+          }
+        }
+      }
+
+      if (!resp.ok) {
+        const errorText = await resp.text();
+        console.error("Amadeus API error:", errorText);
+        throw new Error("Amadeus API call failed: " + errorText);
+      }
+
+      return await resp.json() as T;
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+
+      // If this is the last attempt, throw the error
+      if (attempt === MAX_RETRIES) {
+        console.error(
+          `Amadeus API call failed after ${MAX_RETRIES + 1} attempts:`,
+          lastError.message,
+        );
+        throw lastError;
+      }
+
+      // For non-rate-limit errors, don't retry
+      if (!lastError.message.includes("Rate limit")) {
+        throw lastError;
+      }
     }
   }
-  if (!resp.ok) {
-    const errorText = await resp.text();
-    console.error('Amadeus API error:', errorText);
-    throw new Error('Amadeus API call failed: ' + errorText);
-  }
-  return await resp.json() as T;
+
+  // This should never be reached, but just in case
+  throw lastError || new Error("Unknown error occurred");
 }
 
-export async function fetchHotelPrices(cityCode: string, checkInDate: string = '', checkOutDate: string = '', adults: number = 1): Promise<AmadeusHotelOffersResponse> {
+export async function fetchHotelPrices(
+  cityCode: string,
+  checkInDate: string = "",
+  checkOutDate: string = "",
+  adults: number = 1,
+): Promise<AmadeusHotelOffersResponse> {
   try {
     if (!checkInDate || !checkOutDate) {
-      throw new Error('checkInDate and checkOutDate are required and must be strings');
+      throw new Error(
+        "checkInDate and checkOutDate are required and must be strings",
+      );
     }
     // Step 1: Get hotel IDs for the city
-    const hotelListUrl = `https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-city?cityCode=${cityCode}`;
-    const hotelListData = await fetchWithAutoRefresh<AmadeusHotelListResponse>(hotelListUrl, { headers: {} });
-    const hotelIds = hotelListData.data?.map((h: AmadeusHotel) => h.hotelId).filter(Boolean);
+    const hotelListUrl =
+      `https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-city?cityCode=${cityCode}`;
+    const hotelListData = await fetchWithRetry<AmadeusHotelListResponse>(
+      hotelListUrl,
+      { headers: {} },
+    );
+    const hotelIds = hotelListData.data?.map((h: AmadeusHotel) => h.hotelId)
+      .filter(Boolean);
     if (!hotelIds || hotelIds.length === 0) {
       return { data: [] };
     }
     // Step 2: Get offers for those hotels (limit to 20 IDs for URL length)
-    const limitedHotelIds = hotelIds.slice(0, 20).join(',');
-    const offersUrl = `https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=${limitedHotelIds}&adults=${adults}&checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`;
-    const offersData = await fetchWithAutoRefresh<{ data: AmadeusRawHotelOffer[] }>(offersUrl, { headers: {} });
-    const hotelArray: AmadeusRawHotelOffer[] = Array.isArray(offersData.data) ? offersData.data : [];
+    const limitedHotelIds = hotelIds.slice(0, 20).join(",");
+    const offersUrl =
+      `https://test.api.amadeus.com/v3/shopping/hotel-offers?hotelIds=${limitedHotelIds}&adults=${adults}&checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`;
+    const offersData = await fetchWithRetry<{ data: AmadeusRawHotelOffer[] }>(
+      offersUrl,
+      { headers: {} },
+    );
+    const hotelArray: AmadeusRawHotelOffer[] = Array.isArray(offersData.data)
+      ? offersData.data
+      : [];
     if (!hotelArray.length) {
       return { data: [] };
     }
     let sorted: AmadeusRawHotelOffer[] = hotelArray;
-    if (sorted.some(h => h.hotel.rating)) {
+    if (sorted.some((h) => h.hotel.rating)) {
       sorted = [...sorted].sort((a, b) => {
         const ra = a.hotel.rating ? parseFloat(a.hotel.rating) : 0;
         const rb = b.hotel.rating ? parseFloat(b.hotel.rating) : 0;
         return rb - ra;
       });
     }
-    const filtered: AmadeusRawHotelOffer[] = sorted.filter(h => !h.hotel.rating || parseFloat(h.hotel.rating) >= 3);
+    const filtered: AmadeusRawHotelOffer[] = sorted.filter((h) =>
+      !h.hotel.rating || parseFloat(h.hotel.rating) >= 3
+    );
     if (!filtered.length) {
       return { data: [] };
     }
@@ -118,20 +226,22 @@ export async function fetchHotelPrices(cityCode: string, checkInDate: string = '
         },
         offers: Array.isArray(h.offers)
           ? h.offers.map((o: AmadeusRawOffer) => {
-              let roomsCount = 0;
-              if (Array.isArray(o.rooms)) {
-                roomsCount = o.rooms.length;
-              } else if (o.roomQuantity && typeof o.roomQuantity === 'number') {
-                roomsCount = o.roomQuantity;
-              } else if (o.room && typeof o.room === 'object') {
-                roomsCount = 1;
-              }
-              return {
-                price: { total: o.price?.total ?? '' },
-                roomsCount,
-                adults: typeof o.guests?.adults === 'number' ? o.guests.adults : 0,
-              };
-            })
+            let roomsCount = 0;
+            if (Array.isArray(o.rooms)) {
+              roomsCount = o.rooms.length;
+            } else if (o.roomQuantity && typeof o.roomQuantity === "number") {
+              roomsCount = o.roomQuantity;
+            } else if (o.room && typeof o.room === "object") {
+              roomsCount = 1;
+            }
+            return {
+              price: { total: o.price?.total ?? "" },
+              roomsCount,
+              adults: typeof o.guests?.adults === "number"
+                ? o.guests.adults
+                : 0,
+            };
+          })
           : [],
       };
     });
@@ -141,27 +251,46 @@ export async function fetchHotelPrices(cityCode: string, checkInDate: string = '
   }
 }
 
-export async function fetchFlightPrices(origin: string, destination: string, departureDate: string, adults: number = 1): Promise<AmadeusFlightOffersResponse> {
+export async function fetchFlightPrices(
+  origin: string,
+  destination: string,
+  departureDate: string,
+  adults: number = 1,
+): Promise<AmadeusFlightOffersResponse> {
   try {
-    const url = `https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${origin}&destinationLocationCode=${destination}&departureDate=${departureDate}&adults=${adults}&currencyCode=INR`;
-    const offersData = await fetchWithAutoRefresh<{ data: unknown[] }>(url, { headers: {} });
-    const limited = Array.isArray(offersData.data) ? offersData.data.slice(0, 10) : [];
+    const url =
+      `https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${origin}&destinationLocationCode=${destination}&departureDate=${departureDate}&adults=${adults}&currencyCode=INR`;
+    const offersData = await fetchWithRetry<{ data: unknown[] }>(url, {
+      headers: {},
+    });
+    const limited = Array.isArray(offersData.data)
+      ? offersData.data.slice(0, 10)
+      : [];
     if (!limited.length) {
       return { data: [] };
     }
     // Format to only include the fields in AmadeusFlightOffer
-    const formatted = limited.map(f => {
+    const formatted = limited.map((f) => {
       const flight = f as Record<string, unknown>;
       return {
-        from_city: (flight.itineraries as any)?.[0]?.segments?.[0]?.departure?.iataCode || '',
-        to_city: (flight.itineraries as any)?.[0]?.segments?.slice(-1)?.[0]?.arrival?.iataCode || '',
-        departure_date: (flight.itineraries as any)?.[0]?.segments?.[0]?.departure?.at || '',
-        return_date: (flight.itineraries as any)?.[1]?.segments?.[0]?.departure?.at || undefined,
-        adults: (flight.travelerPricings as any)?.[0]?.travelerType === 'ADULT' ? 1 : 0, // crude, for demo
-        currency: (flight.price as any)?.currency || '',
-        price: { total: (flight.price as any)?.total || '' },
-        duration: (flight.itineraries as any)?.[0]?.duration || '',
-        direct_flight: ((flight.itineraries as any)?.[0]?.segments?.length || 0) === 1,
+        from_city: (flight.itineraries as any)?.[0]?.segments?.[0]?.departure
+          ?.iataCode || "",
+        to_city:
+          (flight.itineraries as any)?.[0]?.segments?.slice(-1)?.[0]?.arrival
+            ?.iataCode || "",
+        departure_date:
+          (flight.itineraries as any)?.[0]?.segments?.[0]?.departure?.at || "",
+        return_date:
+          (flight.itineraries as any)?.[1]?.segments?.[0]?.departure?.at ||
+          undefined,
+        adults: (flight.travelerPricings as any)?.[0]?.travelerType === "ADULT"
+          ? 1
+          : 0, // crude, for demo
+        currency: (flight.price as any)?.currency || "",
+        price: { total: (flight.price as any)?.total || "" },
+        duration: (flight.itineraries as any)?.[0]?.duration || "",
+        direct_flight:
+          ((flight.itineraries as any)?.[0]?.segments?.length || 0) === 1,
         layovers: ((flight.itineraries as any)?.[0]?.segments?.length || 1) - 1,
       };
     });
@@ -179,14 +308,18 @@ if (import.meta.main) {
     const today = new Date();
     const nextMonth = new Date(today.getFullYear(), today.getMonth() + 1, 10);
     const checkIn = nextMonth.toISOString().slice(0, 10);
-    const checkOut = new Date(nextMonth.getFullYear(), nextMonth.getMonth(), nextMonth.getDate() + 2).toISOString().slice(0, 10);
+    const checkOut = new Date(
+      nextMonth.getFullYear(),
+      nextMonth.getMonth(),
+      nextMonth.getDate() + 2,
+    ).toISOString().slice(0, 10);
 
-    console.log('Testing fetchHotelPrices...');
-    const hotelRaw = await fetchHotelPrices('BOM', checkIn, checkOut, 2);
-    console.log('Formatted hotel prices:', JSON.stringify(hotelRaw, null, 2));
+    console.log("Testing fetchHotelPrices...");
+    const hotelRaw = await fetchHotelPrices("BOM", checkIn, checkOut, 2);
+    console.log("Formatted hotel prices:", JSON.stringify(hotelRaw, null, 2));
 
-    console.log('Testing fetchFlightPrices...');
-    const flightRaw = await fetchFlightPrices('BOM', 'DEL', checkIn, 1);
-    console.log('Formatted flight prices:', JSON.stringify(flightRaw, null, 2));
+    console.log("Testing fetchFlightPrices...");
+    const flightRaw = await fetchFlightPrices("BOM", "DEL", checkIn, 1);
+    console.log("Formatted flight prices:", JSON.stringify(flightRaw, null, 2));
   })();
-} 
+}

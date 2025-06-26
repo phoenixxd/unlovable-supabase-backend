@@ -166,7 +166,7 @@ export async function getDynamicRecommendations(
   };
   const finalRequestString = JSON.stringify(finalRequestBody);
   console.log("OpenAI Final Request length:", finalRequestString.length);
-  const chunkSize = 1000;
+  const chunkSize = 10000;
   for (let i = 0; i < finalRequestString.length; i += chunkSize) {
     console.log(
       `OpenAI Final Request chunk [${i}-${
