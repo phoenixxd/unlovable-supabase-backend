@@ -1,9 +1,5 @@
 import { fetchFlightPrices, fetchHotelPrices } from "./amadeus/amadeus.ts";
 import {
-  AmadeusFlightOffersResponse,
-  AmadeusHotelOffersResponse,
-} from "./amadeus/model.ts";
-import {
   openaiChatCompletion,
   OpenAIChatCompletionRequest,
   OpenAIChatCompletionResponse,
@@ -44,7 +40,7 @@ export async function getDynamicRecommendations(
           .replace("{{answers}}", JSON.stringify(answers)),
       },
     ],
-    temperature: 0.7,
+    temperature: 0.5,
   };
   console.log("OpenAI Initial Request:", JSON.stringify(initialRequestBody));
   const initialResult: OpenAIChatCompletionResponse =
@@ -60,7 +56,12 @@ export async function getDynamicRecommendations(
     } else {
       msg = JSON.stringify(e);
     }
-    throw new Error("Failed to parse initial OpenAI response, " + msg);
+    throw new Error(
+      "Failed to parse initial OpenAI response, " +
+        msg +
+        " \nInitialResult = " +
+        JSON.stringify(initialResult),
+    );
   }
 
   // 2. For each destination, fetch hotel and flight prices using only values from initialDestinations
@@ -126,12 +127,24 @@ export async function getDynamicRecommendations(
         }
         return { data: [] };
       }),
-    ]).then(([hotelPrices, flightPrices]) => ({
-      dest,
-      score: entry.score,
-      hotelPrices,
-      flightPrices,
-    }));
+    ]).then(([hotelPrices, flightPrices]) => {
+      // Log the actual Amadeus API responses
+      console.log(
+        `Amadeus Hotel Response for ${dest}:`,
+        JSON.stringify(hotelPrices),
+      );
+      console.log(
+        `Amadeus Flight Response for ${dest}:`,
+        JSON.stringify(flightPrices),
+      );
+
+      return {
+        dest,
+        score: entry.score,
+        hotelPrices,
+        flightPrices,
+      };
+    });
   });
   // Wait for all fetches to complete
   const allResults = await Promise.all(fetchPromises);
@@ -149,6 +162,12 @@ export async function getDynamicRecommendations(
       });
     }
   }
+
+  // Log the final processed Amadeus API response
+  console.log(
+    "Final Amadeus API Response:",
+    JSON.stringify(amadeusApiResponse),
+  );
 
   // 3. Call OpenAI again with final recommendation prompt
   const finalPrompt = finalRecommendationPrompt
